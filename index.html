@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css cdn -->
+
+   
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css cdn -->
+
+    <title>Book List</title>
+    <style>
+        .success,
+        .error {
+            color: #fff;
+            padding: 5px;
+            margin: 0 auto;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+
+        .right {
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+
+        .container {
+            background: azure;
+            padding: 54px;
+            max-width: 40%;
+            margin: 0 auto;
+            height: auto;
+        }
+
+        
+
+        .header {
+            text-align: center;
+            font-size: 45px;
+        }
+
+        .table {
+            margin: 0 auto;
+        }
+
+        span {
+            color: red;
+        }
+
+        .delete {
+            background-color: #ff00e0;
+            padding: 9px;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        #title,
+        #author,
+        #isbn,
+        #filter {
+            height: 32px;
+        }
+
+        .img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sp {
+            color: #0E8388;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h3 class="header"><span class="sp">I'am</span> <span class="auto-typed"></span></h3>
+
+
+        <div>
+            <img class="img" src="./img/juicy-web-designer-girl-making-landing-page-with-video-color-palette-and-site-blocks.gif" alt="">
+        </div>
+
+        <form name="myFrom" id="book-form">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="author" class="u-full-width">
+            </div>
+
+            <div>
+                <label for="isbn">ISBN#</label>
+                <input type="text" id="isbn" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" value="Submint" class="u-full-width" id="he">
+            </div>
+            <div class="right">
+                <input type="text" name="" id="filter" placeholder="Search here !!">
+            </div>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
+
+
+
